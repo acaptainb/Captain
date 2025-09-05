@@ -23,15 +23,26 @@ def perform_op(op1, op2, operation):
         return op1 / op2
 
 def draw_shape(shape,size):
-    pass
+    if shape not in ['circle','triangle']:
+        return None
+    import turtle as t
+    if shape == 'circle':
+        t.circle(size)
+    elif shape == 'triangle':
+            t.forward(size)
+            t.left(120)
+            t.forward(size)
+            t.left(120)
+            t.forward(size)
+            t.left(120)
+    t.done()
 
 if __name__ == "__main__":
-    a, b, =map(int,input("put the number here").split())
-    # you can put code here to run your functions for testing
-    c=input("put the sign here")
+    # a, b, =map(int,input("put the number here").split())
+    x=int(input("put the number here: "))
+    c=input("put the shape here:")
     # print(is_between(a,b,c))
-    print(perform_op(a,b,c))
-    # do not add extra code outside here or the functions you
-    # are writing or it may confuse/break the autograder
+    # print(perform_op(a,b,c))
+    print(draw_shape(c,x))
     pass
 
