@@ -4,7 +4,7 @@ t.setup(1500, 400)
 
 def diamond_sign():
     '''
-    :return:
+    :return: 
     '''
     t.pencolor('black')
     t.pensize(3)

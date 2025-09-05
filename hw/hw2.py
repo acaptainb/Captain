@@ -1,7 +1,7 @@
 '''
 Abdulaziz
 '''
-
+ 
 def is_between(a, b, c):
     if b <= c <= a or a <= c<= b:
         return True
